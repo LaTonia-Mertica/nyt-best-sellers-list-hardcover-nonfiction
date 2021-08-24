@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="icon" type="image/png" href="images/lm-alt-logo.png" />
+
+		<title>New York Times: Hardcover Nonfiction Best Sellers</title>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+
+	<body>
+		<nav class="navbar fixed-top navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">
+				<img
+					src="images/NYT-logo.png"
+					alt="New York Times logo"
+					width="30"
+					height="30"
+				/>
+				<h1>New York Times: Hardcover Nonfiction Best Sellers Book List</h1>
+			</a>
+		</nav>
+
+		<div class="center" id="bestNonfictionSellersTitleBarImgs">
+			<img
+				src="https://storage.googleapis.com/du-prd/books/images/9780316492935.jpg"
+				alt="Book Cover: How The Word is Passed"
+			/>
+
+			<img
+				src="https://storage.googleapis.com/du-prd/books/images/9781250273659.jpg"
+				alt="Book Cover: Killing The Mob"
+			/>
+
+			<img
+				src="https://storage.googleapis.com/du-prd/books/images/9781250223180.jpg"
+				alt="Book Cover: What Happened to You?"
+			/>
+
+			<img
+				src="https://storage.googleapis.com/du-prd/books/images/9781984856050.jpg"
+				alt="Book Cover: After the Fall"
+			/>
+
+			<img
+				src="https://storage.googleapis.com/du-prd/books/images/9780393881554.jpg"
+				alt="Book Cover: The Premonition"
+			/>
+
+			<img
+				src="https://storage.googleapis.com/du-prd/books/images/9780525555216.jpg"
+				alt="Book Cover: The Anthropocene Reviewed"
+			/>
+
+			<img
+				src="https://storage.googleapis.com/du-prd/books/images/9780593139134.jpg"
+				alt="Book Cover: GreenLights"
+			/>
+
+			<img
+				src="https://storage.googleapis.com/du-prd/books/images/9780316296618.jpg"
+				alt="Book Cover: The Bomber Mafia"
+			/>
+
+			<img
+				src="https://storage.googleapis.com/du-prd/books/images/9781250305978.jpg"
+				alt="Book Cover: Somebody's Daughter A Memoir"
+			/>
+
+			<img
+				src="https://storage.googleapis.com/du-prd/books/images/9781984801258.jpg"
+				alt="Book Cover: Untamed"
+			/>
+
+			<img
+				src="https://storage.googleapis.com/du-prd/books/images/9780593230251.jpg"
+				alt="Book Cover: Caste The Origins of Our Discontents"
+			/>
+
+			<img
+				src="https://storage.googleapis.com/du-prd/books/images/9780399589010.jpg"
+				alt="Book Cover: Zero Fail The Rise and Fall of The Secret Service"
+			/>
+
+			<img
+				src="https://storage.googleapis.com/du-prd/books/images/9780358423881.jpg"
+				alt="Book Cover: Rememberings"
+			/>
+
+			<img
+				src="https://storage.googleapis.com/du-prd/books/images/9780316451406.jpg"
+				alt="Book Cover: Noise A Flaw in Human Judgment"
+			/>
+
+			<img
+				src="https://storage.googleapis.com/du-prd/books/images/9781984825407.jpg"
+				alt="Book Cover: Year Book"
+			/>
+		</div>
+
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+		<div class="container-fluid mainContentDiv">
+			<div class="row contentHeaders">
+				<div class="col">
+					<div class="contentHeader"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id="myAPIContent">
+			<p>Just a sec - an awesome best sellers list is loading .. .</p>
+			</div>
+
+			<footer>
+				<div class="col copyrightHeader">Copyright &copy; New York Times</div>
+			</footer>
+
+			<script src="script.js"></script>
+		</div>
+	</body>
+</html>
