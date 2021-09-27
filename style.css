@@ -5,14 +5,17 @@ body {
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   letter-spacing: 2.1px;
+  color: white;
+  text-shadow: 0.5px 0.5px 1px black;
+}
+
+.pageTitle {
+  flex-grow: 1;
+  text-align: center;
 }
 
 nav.navbar.fixed-top.navbar-dark.bg-dark {
-  background-color: #8b8386 !important;
-}
-
-nav > a > h1 {
-  margin-left: 15%;
+  background-color: #b0e0e6 !important;
 }
 
 .center {
@@ -22,108 +25,412 @@ nav > a > h1 {
 }
 
 #bestNonfictionSellersTitleBarImgs {
-  margin-top: 103px;
+  margin-top: 77px;
   max-width: 100vw;
   overflow-x: scroll;
 }
-
-/*
-div > img {
-  width: 23%;
-}
-*/
 
 .mainContentDiv {
   margin: 0;
   padding: 0;
 }
 
-.contentHeaders {
-  /*margin-top: 23px;*/
-  /*margin-bottom: 11px;*/
-
-  font-size: 17px;
-  color: white;
-}
-
-.contentHeader {
-  font-weight: bold;
-  letter-spacing: 1.3px;
-  text-align: center;
-
-  background-color: #8b8386;
+.colorBarUnderTopImgs {
+  background-color: #b0e0e6;
   padding-top: 17px;
   padding-bottom: 17px;
-}
-/* 
-.descriptionHeader {
-  text-align: right;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-#bookImages img {
-  display: block;
-  width: 37%;
-
-  margin-left: 167px;
+/*BELOW CODE BLOCK FOR TOGGLE VIEW*/
+.colorBarUnderTopImgs .col {
+  display: flex;
+  justify-content: center;
 }
 
-#colDescription {
-  font-style: italic;
-  line-height: 16.7em;
+#flexSwitchCheckDefault {
+  background-color: rebeccapurple;
+  width: 67px;
 }
 
-#colTitle {
-  font-weight: bold;
-  line-height: 16.7em;
-} */
+#flexSwitchCheckDefault:active,
+#flexSwitchCheckDefault:focus,
+.form-check-input:focus {
+  outline: none;
+  box-shadow: none;
+}
 
+.form-check-input:checked {
+  background-color: #5ce1e6 !important;
+}
+
+#flexSwitchCheckDefault:hover {
+  cursor: pointer;
+}
+
+#toggleViewText {
+  font-family: Impact, Haettenschweiler, sans-serif;
+  font-size: smaller;
+  letter-spacing: 1px;
+
+  color: white;
+  text-shadow: 0.5px 0.5px 1px black;
+}
+
+/*BELOW CODE FOR LIST VIEW CARDS*/
 .card {
   border: none;
 }
 
+.card:hover {
+  box-shadow: 10px 10px 7px 10px #b0e0e6;
+}
+
 div.row.g-0 {
-  /* margin-left: -1px; */
-  margin-top: 3px;
-  margin-bottom: -13px;
+  margin-top: 1px;
   width: 100%;
   height: 100%;
   border: none;
-  /* border-bottom: 1px solid #8b8386; */
 }
 
 img.img-fluid.rounded-start {
   width: 325px;
+  margin-left: 20%;
+}
+
+#bookmark {
+  max-width: 2.125%;
+  margin-top: 11px;
+  /* margin-bottom: -167px; */
+}
+
+#bookmark:hover {
+  transform: scale(1.125);
+  filter: invert(75%);
+  cursor: pointer;
+}
+
+.favorited {
+  transform: scale(1.125);
+  filter: invert(75%);
+}
+
+#startOrStopImg {
+  max-width: 4%;
+  /* margin-bottom: -187px; */
+  margin-left: -1%;
+  margin-top: 7px;
+}
+
+#startOrStopImg:hover {
+  cursor: pointer;
 }
 
 .card-title {
-  margin-top: 15%;
   font-size: 24px;
+  margin-top: 15%;
 }
 
 h2.card-title:hover {
-  color: blue;
-  /* transform: scale(1.07); */
-  /* transition: ease-in-out all 0.3s; */
+  color: #131313;
+}
+
+a:hover {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #b0e0e6;
+  text-shadow: 0.5px 0.5px 1px black;
 }
 
 .card-author {
   font-size: 11px;
-  color: #c8c4bd;
 }
 
 .card-text {
   font-style: italic;
 }
 
-.text-muted {
-  font-size: xx-small;
+/*BELW CODE FOR GRID VIEW*/
+.book-image {
+  min-height: 425px;
+  max-height: 425px;
+
+  padding-bottom: 3px;
 }
 
-.copyrightHeader {
-  color: white;
-  text-align: center;
-  background-color: #8b8386;
+.book-image-link {
+  display: flex;
+  justify-content: center;
+}
 
+.book-image-link:hover {
+  transform: scale(1.0125);
+  border-bottom: 1.7px solid #5ce1e6;
+}
+
+.bookDetails {
+  margin-top: 3%;
+}
+
+.bookTitle {
+  color: #b0e0e6;
+  text-shadow: 0.5px 0.5px 1px black;
+
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+
+  margin-top: -7px;
+}
+
+.bookAuthor {
+  color: lightslategray;
+  font-size: xx-small;
+  text-align: center;
+
+  margin-bottom: 44px;
+}
+
+.bookDescription {
+  color: black;
+
+  font-size: small;
+  line-height: 17.3px;
+  text-align: center;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
+}
+
+/* BELOW CODE FOR COPYRIGHT INFO IN FOOTER*/
+.copyrightHeader {
+  text-align: center;
+  color: white;
+  text-shadow: 0.5px 0.5px 1px black;
+  background-color: #b0e0e6;
   padding-top: 22px;
   padding-bottom: 22px;
+}
+
+/* BELOW CODE FOR MESSAGE THAT PAGE IS LOADING*/
+div.row > p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: black;
+  text-shadow: 1px 1px 2px #000000;
+  padding: 22px 0;
+}
+
+/*BELOW CODE FOR LIST VIEW MEDIA QUERIES*/
+/*BELOW CODE MEDIA QUERIES FOR LARGER NON FULL SCREEN DEVICES LIST VIEW*/
+@media only screen and (max-width: 1153px) {
+  .nytImg > img {
+    display: none;
+  }
+
+  .card-title,
+  .card-author,
+  .card-text,
+  #startOrStopImg,
+  #bookmark {
+    margin-left: 85px;
+  }
+}
+
+/*BELOW CODE MEDIA QUERIES FOR LARGE-TO-MEDIUM DEVICES LIST VIEW*/
+@media only screen and (max-width: 775px) {
+  .nytImg > img {
+    display: none;
+  }
+
+  .pageTitle > h1 {
+    font-size: 20px;
+  }
+
+  #bestNonfictionSellersTitleBarImgs {
+    /* margin-top: 111px; */
+    margin-top: 6.79%;
+  }
+
+  .card-title {
+    font-size: 22px;
+    margin-top: 1%;
+    margin-left: 19%;
+  }
+
+  .card-author {
+    font-size: 9px;
+    color: lightslategray;
+    margin-left: 19%;
+  }
+
+  .card-text {
+    font-size: 17px;
+    margin-left: 19%;
+  }
+}
+
+/*BELOW CODE MEDIA QUERIES FOR MEDIUM DEVICES LIST VIEW*/
+@media only screen and (max-width: 766px) {
+  .nytImg > img {
+    display: none;
+  }
+
+  .pageTitle > h1 {
+    font-size: 18px;
+  }
+
+  #bestNonfictionSellersTitleBarImgs {
+    /* margin-top: 109px; */
+    margin-top: 6.79%;
+  }
+
+  .card-title {
+    font-size: 20px;
+    margin-top: 1%;
+    margin-left: 19%;
+  }
+
+  .card-author {
+    font-size: 9px;
+    color: lightslategray;
+    margin-left: 19%;
+  }
+
+  .card-text {
+    font-size: 17px;
+    margin-left: 19%;
+  }
+
+  #bookmark {
+    margin-left: 19.85%;
+  }
+
+  #startOrStopImg {
+    margin-left: 19%;
+  }
+}
+
+/*BELOW CODE MEDIA QUERIES FOR SMALL DEVICES LIST VIEW*/
+@media only screen and (max-width: 460px) {
+  .nytImg > img {
+    display: none;
+  }
+
+  #bestNonfictionSellersTitleBarImgs {
+    margin-top: 63px;
+  }
+
+  .pageTitle > h1 {
+    font-size: 16px;
+    margin-top: 3%;
+    margin-left: 2%;
+  }
+
+  .card-title {
+    font-size: 19px;
+    margin-top: 1%;
+    margin-left: 18%;
+  }
+
+  .card-author {
+    font-size: 7px;
+    color: lightslategray;
+    margin-left: 18%;
+  }
+
+  .card-text {
+    font-size: 14px;
+    margin-left: 18%;
+  }
+}
+
+/*BELOW CODE FOR GRID VIEW MEDIA QUERIES*/
+/*BELOW CODE MEDIA QUERIES FOR MEDIUM DEVICES GRID VIEW*/
+@media only screen and (max-width: 766px) and (min-width: 460px) {
+  .gridItem .nytImg > img {
+    display: none;
+  }
+
+  .gridItem .pageTitle > h1 {
+    font-size: 21px;
+  }
+
+  .gridItem #bestNonfictionSellersTitleBarImgs {
+    margin-top: 109px;
+  }
+
+  .gridItem .bookTitle {
+    font-size: 22px;
+    margin-top: 1%;
+    /* margin-left: 19%; */
+  }
+
+  .gridItem .bookAuthor {
+    font-size: 9px;
+    color: lightslategray;
+    /* margin-left: 19%; */
+  }
+
+  .gridItem .bookDescription {
+    font-size: 17px;
+    /* margin-left: 19%; */
+  }
+}
+
+/*BELOW CODE FOR GRID VIEW MEDIA QUERIES*/
+/*BELOW CODE MEDIA QUERIES FOR SMALLER MEDIUM DEVICES IMAGE TOP BORDER ONLY GRID VIEW*/
+@media only screen and (max-width: 595px) and (min-width: 470px) {
+  .gridItem .nytImg > img {
+    display: none;
+  }
+
+  .gridItem #bestNonfictionSellersTitleBarImgs {
+    margin-top: 1%;
+  }
+
+  p#colDescription.bookDescription {
+    display: none;
+  }
+}
+
+/*BELOW CODE MEDIA QUERIES FOR SMALL DEVICES GRID VIEW*/
+@media only screen and (max-width: 460px) {
+  .gridItem .nytImg > img {
+    display: none;
+  }
+
+  /* .gridItem #bestNonfictionSellersTitleBarImgs {
+    margin-top: -450;
+  } */
+
+  .gridItem .pageTitle > h1 {
+    font-size: 18px;
+    margin-top: 3%;
+    /* margin-left: 2%; */
+  }
+
+  .gridItem .bookTitle {
+    font-size: 19px;
+    margin-top: 1%;
+    /* margin-left: 18%; */
+  }
+
+  .gridItem .bookAuthor {
+    font-size: 7px;
+    color: lightslategray;
+    /* margin-left: 18%; */
+  }
+
+  /* .gridItem p#colDescription.bookDescription {
+    font-size: 14px;
+    margin-left: 44px;
+  } */
 }
