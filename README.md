@@ -1,2 +1,1 @@
-# nyt-best-sellers-list-hardcover-nonfiction
-Created with CodeSandbox
+# nyt-selected-best-sellers-list
