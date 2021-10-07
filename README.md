@@ -1,4 +1,4 @@
-# nyt-selected-best-sellers-list
+# NYT Selected Best Sellers List
 
 ###### <a href="https://www.latoniamertica.dev/nyt-selected-best-sellers-list/" target="_blank">visit NYT Selected Best Sellers List by La'Tonia Mertica</a>
 <br>
