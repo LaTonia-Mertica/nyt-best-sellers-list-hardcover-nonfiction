@@ -6,7 +6,7 @@ let htmlToUpdate = ""; <br>
 let htmlGridToUpdate = ""; <br>
 let imgsToUpdate = ""; <br>
 
-*to establish toggle between list and grid views*
+*to establish toggle between list and grid views. Each view had to be coded as separate files then just non-duplicate code migrated into file of view choose to set as the default view - meaning the view that welcomes users before they toggle view*
 
 **HOW WORKS**
 <br>
