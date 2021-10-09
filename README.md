@@ -1,4 +1,20 @@
 # NYT Selected Best Sellers List
+*solid exercise for alternative and multiple placement of scripts in html, hard-coded versus dynamically populated images, using id to display content called through api in separate javascript file. .. using axios, shuffle to reorganize books each load, localStorage for favorites feature, and let statements:
+
+let books;
+let htmlToUpdate = "";
+let htmlGridToUpdate = "";
+let imgsToUpdate = "";
+
+to establish toggle between list and grid views*
+
+**HOW WORKS**
+<br>
+scroll left-to-right in header for full list of books, click toggle view to switch, click bookmark icon to select/de-select favorites, click headphones icon in list view to listen to selected playlist in both views, and click book image or title to purchase a copy 
+
+**NEXT STEP**
+<br>
+add favorites and playlist in grid view in stylistically optimized design/format 
 
 ###### <a href="https://www.latoniamertica.dev/nyt-selected-best-sellers-list/" target="_blank">visit NYT Selected Best Sellers List by La'Tonia Mertica</a>
 <br>
