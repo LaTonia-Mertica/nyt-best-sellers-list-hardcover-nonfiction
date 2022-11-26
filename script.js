@@ -192,7 +192,7 @@ const favoriteClicked = (event, isbn) => {
   ]).filter((book) => {
     return !(
       book.description.toLowerCase().includes("fox news") ||
-      book.description.toLowerCase().includes("donald trump") ||
+      book.author.toLowerCase().includes("donald trump") ||
       book.author.toLowerCase().includes("mike pence") ||
       book.author.toLowerCase().includes("rush limbaugh") ||
       book.author.toLowerCase().includes("ted cruz") ||
@@ -203,7 +203,11 @@ const favoriteClicked = (event, isbn) => {
       book.author.toLowerCase().includes("mark meadows") ||
       book.author.toLowerCase().includes("peter navarro") ||
       book.author.toLowerCase().includes("jared kushner") ||
-      book.author.toLowerCase().includes("newt gingrich")
+      book.author.toLowerCase().includes("newt gingrich") ||
+      book.author.toLowerCase().includes("tucker carlson") ||
+      book.author.toLowerCase().includes("kyrsten sinema") ||
+      book.author.toLowerCase().includes("joseph manchin") ||
+      book.author.toLowerCase().includes("joe manchin")
     );
 
     // if (book.description.toLowerCase().includes("fox news")) {
