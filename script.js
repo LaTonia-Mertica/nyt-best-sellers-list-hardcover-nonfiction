@@ -9,6 +9,7 @@ const promise1 = axios.get(
 const promise2 = axios.get(
   "https://api.nytimes.com/svc/books/v3/lists/current/hardcover-nonfiction.json?api-key=ICC9xiMKjph9039DEICZ2cOcrnZyJeay"
 );
+console.log(promise2);
 
 // BELOW CODE USES SHUFFLE FROM STACK OVERFLOW AT https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffle(array) {
@@ -41,7 +42,8 @@ const updateHtml = () => {
   htmlToUpdate = "";
   imgsToUpdate = "";
   for (const book of books) {
-    console.log(book);
+    // test output
+    // console.log(book);
     // let foxNewsBook = false;
     // if (book.author.includes("Carlson")) {
     //   foxNewsBook = true;
@@ -191,7 +193,28 @@ const favoriteClicked = (event, isbn) => {
     ...response2.data.results.books,
   ]).filter((book) => {
     return !(
-      book.description.toLowerCase().includes("fox news") ||
+      book.publisher.toLowerCase().includes("fox news") ||
+      book.publisher.toLowerCase().includes("post hill press") ||
+      book.publisher.toLowerCase().includes("defiance press") ||
+      book.publisher.toLowerCase().includes("kindle direct") ||
+      book.publisher.toLowerCase().includes("regnery") ||
+      book.publisher.toLowerCase().includes("liberty hill") ||
+      book.publisher.toLowerCase().includes("salem books") ||
+      book.publisher.toLowerCase().includes("henry holt") ||
+      book.publisher.toLowerCase().includes("republic book") ||
+      book.publisher.toLowerCase().includes("center street") ||
+      book.publisher.toLowerCase().includes("hoover institution") ||
+      book.publisher.toLowerCase().includes("princeton university") ||
+      book.publisher.toLowerCase().includes("broadside books") ||
+      book.publisher.toLowerCase().includes("all seasons press") ||
+      book.publisher.toLowerCase().includes("threshold editions") ||
+      book.description.toLowerCase().includes("republican senator") ||
+      book.description.toLowerCase().includes("radical left") ||
+      book.description.toLowerCase().includes("conservative author") ||
+      book.description.toLowerCase().includes("right-wing") ||
+      book.description.toLowerCase().includes("republican representative") ||
+      book.description.toLowerCase().includes("republican leader") ||
+      book.description.toLowerCase().includes("traditionalist") ||
       book.author.toLowerCase().includes("donald trump") ||
       book.author.toLowerCase().includes("mike pence") ||
       book.author.toLowerCase().includes("rush limbaugh") ||
@@ -207,7 +230,13 @@ const favoriteClicked = (event, isbn) => {
       book.author.toLowerCase().includes("tucker carlson") ||
       book.author.toLowerCase().includes("kyrsten sinema") ||
       book.author.toLowerCase().includes("joseph manchin") ||
-      book.author.toLowerCase().includes("joe manchin")
+      book.author.toLowerCase().includes("joe manchin") ||
+      book.author.toLowerCase().includes("clarence thomas") ||
+      book.author.toLowerCase().includes("brett kavanaugh") ||
+      book.author.toLowerCase().includes("chris christie") ||
+      book.author.toLowerCase().includes("kellyanne conway") ||
+      book.author.toLowerCase().includes("sean hannity") ||
+      book.author.toLowerCase().includes("maria bartiromo")
     );
 
     // if (book.description.toLowerCase().includes("fox news")) {
