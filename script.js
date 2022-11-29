@@ -236,7 +236,10 @@ const favoriteClicked = (event, isbn) => {
       book.author.toLowerCase().includes("chris christie") ||
       book.author.toLowerCase().includes("kellyanne conway") ||
       book.author.toLowerCase().includes("sean hannity") ||
-      book.author.toLowerCase().includes("maria bartiromo")
+      book.author.toLowerCase().includes("maria bartiromo") ||
+      book.author.toLowerCase().includes("hershel walker") ||
+      book.author.toLowerCase().includes("lindsey graham") ||
+      book.author.toLowerCase().includes("tim scott")
     );
 
     // if (book.description.toLowerCase().includes("fox news")) {
